@@ -7,8 +7,10 @@
 #   `brew bundle install`
 ##
 
+is_ci = ENV.fetch('CI', 'false') != 'true'
+
 # Only install development tools in non CI mode
-if ENV.fetch('CI', 'false') != 'true'
+if is_ci
   brew 'direnv'
   brew 'pre-commit'
 end
