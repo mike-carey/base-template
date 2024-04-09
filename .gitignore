@@ -17,14 +17,14 @@ tmp/
 # Archive files
 *.gz
 *.bak
+*.deb
 *.log
+*.pkg
+*.rpm
 *.tar
 *.tmp
 *.tgz
 *.zip
-*.deb
-*.rpm
-*.pkg
 
 # Mac OS files
 .DS_Store
