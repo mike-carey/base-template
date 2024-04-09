@@ -21,7 +21,7 @@ jobs:
   cleanup:
     name: 'Template Cleanup'
     runs-on: ubuntu-latest
-    if: '! endsWith(github.event.repository.name, "-template")'
+    if: "! endsWith(github.event.repository.name, '-template')"
     steps:
       - name: 'Checkout'
         uses: actions/checkout@v4
