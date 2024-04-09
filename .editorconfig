@@ -1,8 +1,4 @@
-###
-# Global Editor Configurations
-##
-
-root = true
+# @see https://editorconfig.org/
 
 [*]
 end_of_line = lf
@@ -19,5 +15,7 @@ indent_size = 4
 [Makefile]
 indent_style = tab
 
+[*.go]
+indent_style = tab
 
 # .editorconfig

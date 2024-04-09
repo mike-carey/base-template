@@ -1,5 +1,0 @@
-# vi:syntax=sh
-
-export PATH="$PWD/bin:$PATH"
-
-# cp .envrc.example .envrc

@@ -1,44 +1,42 @@
-## Base gitignore
+# Brewfile does not actually use the lock and will update
+# the dependencies everytime no matter what
+Brewfile.lock.json
 
-/.envrc
-/.env
+# Direnv storage
+.direnv/
 
-## OS Files
+# Environment variables
+.env
 
-# Mac OS
+# Common build directories
+build/
+dist/
+out/
+tmp/
+
+# Archive files
+*.gz
+*.bak
+*.log
+*.tar
+*.tmp
+*.tgz
+*.zip
+*.deb
+*.rpm
+*.pkg
+
+# Mac OS files
 .DS_Store
 ._*
 .Trashes/
 
-# Linux
+# Linux files
 *~
 *.swp
 
-# Windows
+# Windows files
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 *.lnk
-
-
-## Ignored Extensions
-
-*.bak
-*.log
-*.old
-*.out
-*.swp
-*.tmp
-
-# Archives
-*.zip
-*.tar
-*.tgz
-*.jar
-*.war
-
-# Only archives allowed by default
-!maven-wrapper.jar
-!gradle-wrapper.jar
-
-# .gitignore
